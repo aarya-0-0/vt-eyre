@@ -1,37 +1,30 @@
-# VT-Eyre
+# VT-Eyre: VirusTotal CLI & GUI Scanner
 
-**VT-Eyre** is a lightweight Python CLI tool for scanning URLs and files for malware using a local FastAPI backend server and the VirusTotal API. It is designed to be beginner-friendly while following professional Python packaging practices.
+VT-Eyre is a lightweight Python tool that allows you to scan URLs and files for malicious content using the VirusTotal API. It provides both a command-line interface (CLI) and a graphical interface (GUI) for ease of use.
 
 ---
 
 ## Features
 
-- Scan URLs or files for potential malware
-- CLI-based tool for simple usage
-- Local FastAPI server handles communication with VirusTotal API
-- Clear scan summary including:
-  - Malicious
-  - Suspicious
-  - Harmless
-  - Undetected
+- Scan URLs for malware and suspicious content.
+- Scan files for malicious behavior.
+- Supports custom backend server URLs.
+- CLI tool for terminal users.
+- Simple GUI for desktop users.
+- Displays a clear summary of scan results: Malicious, Suspicious, Harmless, Undetected.
 
 ---
+## Scan Files
+command: vt-eyre --file malicious.txt
+
+---
+## Scan url 
+command: vt-eyre --url example.com
 
 ## Installation
 
 Install VT-Eyre via pip:
 
-'''bash
+```bash
 pip install vt-eyre==0.8.0
-
-### Run VT-Eyre CLI
-
-Scan a URL:
-
-``bash
-vt-eyre --url example.com
-
-Scan a file:
-vt-eyre --file malicious.txt
-
 
