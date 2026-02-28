@@ -4,7 +4,7 @@ import uvicorn
 
 app = FastAPI()
 
-VT_API_KEY = "5ca6f006544e46c5dd85b10def7d5fc0bb5dd0c91e02e01b43c77894dc0ad6e7       "  # Keep your VirusTotal API key here
+VT_API_KEY = "API"  # Not keeping my real API for security purposes 
 
 @app.post("/scan-file")
 async def scan_file(file: UploadFile):
