@@ -1,1 +1,19 @@
+[project]
+name = "vt-eyre"
+version = "0.8.0" # bump version if you uploaded 0.2.0 before
+description = "Lightweight VirusTotal CLI scanner using a secure server"
+authors = [
+    { name="Aarya Shrestha" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests"
+]
 
+[project.scripts]
+vt-eyre = "vt_eyre.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
